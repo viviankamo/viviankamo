@@ -13,8 +13,6 @@ public class Hengagubben {
 		System.out.println("The point of the game is to guess the secret word");
 		System.out.println("Careful you only have 3 chances, good luck!");
 		
-		
-		
 		// säger att input från (spelaren) kommer ges  
 		Scanner input = new Scanner(System.in);
 		// Gör så att ett random ord från Arraylistan blir valt 
@@ -23,9 +21,10 @@ public class Hengagubben {
  
         // detta visar längden på ordet 
         String word = arr[r.nextInt(arr.length)];
-        // kollar vilka bokstäver som finns i ordet så 
-        char[] CharArr=word.toCharArray(); 
-        
+        // kollar vilka bokstäver som syns i ordet ifall man tex. skulle gissa på samma bokstav 2ggr 
+        char[] CharArr=word.toCharArray();
+        // doldbokstav är bokstäverna som inte syns för spelaren i ordet.
+        char[] Doldbokstav = word.toCharArray();
         // beteckningen för doldbokstav är [i] och när man gissat rätt blir bokstaven synlig och man får gissa på nästa
         for(int i=0;i<Doldbokstav.length;i++)
     {
