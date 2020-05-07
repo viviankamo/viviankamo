@@ -42,7 +42,7 @@ public class Guessinggame {
 		
 		}
 		}
-		// om du har slut på gissningar skriver den ut svaret.
+		// om du har slut på gissningar skriver den ut svaret
 		if (guesses == 0) { 
 			System.out.println("Sorry but the number was " + answer);
 		}
